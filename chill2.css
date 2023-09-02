@@ -1,0 +1,116 @@
+/*Bouton Ausio Chill basique*/
+.chillbtn button {
+    position: relative;
+    height: 40px;
+    width: 180px;
+    border-radius: 50px;
+    background-color: #181717;
+    border: 3px solid #20db4c;
+    font-size: 0.9em;
+    font-family: netflix;
+    color: #20db4c;
+    z-index: 2;
+    transition: 0.2s;
+    overflow: hidden;
+    box-shadow: #00310b -5px 5px 20px;
+}
+
+.chillbtn button:hover {
+    color: white;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 1.05em;
+}
+
+.chillbtn button::before {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 200px;
+    background-color: #20db4c;
+    top: -2px;
+    left: -2px;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.chillbtn button:hover::before {
+    transform: translate(0%);
+    transition: 0.5s;
+}
+
+.chillbtn button:hover {
+    color: white;
+}
+
+.chillbtn button i {
+    transform: scale(0);
+    margin: -10px;
+    transition: 0.3s;
+}
+
+.chillbtn button:hover i {
+    transform: scale(5);
+    margin-left: 20px;
+}
+
+/*Bouton Audio Chill Style 2*/
+.chillbtn .btn-style2 {
+    position: relative;
+    height: 40px;
+    width: 300px;
+    border-radius: 0px;
+    background-color: #181717;
+    border: 3px solid #dba320;
+    font-size: 1.2em;
+    font-family: netflix;
+    color: #dba320;
+    z-index: 2;
+    transition: 0.2s;
+    overflow: hidden;
+    box-shadow: #312300 -5px 5px 20px;
+}
+
+.chillbtn .btn-style2:hover {
+    color: white;
+    width: 350px;
+    height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.chillbtn .btn-style2::before {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 350px;
+    background-color: #dba320;
+    top: -2px;
+    left: -2px;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.chillbtn .btn-style2:hover::before {
+    transform: translate(0%);
+    transition: 0.5s;
+}
+
+.chillbtn .btn-style2:hover {
+    color: white;
+}
+
+.chillbtn .btn-style2 i {
+    transform: scale(0);
+    margin: -10px;
+    transition: 0.3s;
+}
+
+.chillbtn .btn-style2:hover i {
+    transform: scale(5);
+    margin-left: 20px;
+}
