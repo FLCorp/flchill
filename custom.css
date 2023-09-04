@@ -1,0 +1,513 @@
+@font-face {
+    font-family: flchill;
+    src: url(font/ELEKTORA.ttf);
+}
+@font-face {
+    font-family: netflix;
+    src: url(font/BebasNeue-Regular.ttf);
+}
+
+/* Reset des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+/* Styles généraux */
+body {
+    font-family: netflix;
+    background-color: #33d601;
+    color: #333;
+    line-height: 1.6;
+}
+
+.fsd-logo{
+    width: auto;
+    height: auto;
+}
+  
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+  
+/* En-tête */
+header {
+    background-color: #20d5db;
+    padding: 20px;
+}
+  
+nav ul {
+    list-style: none;
+}
+  
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+  
+nav ul li a {
+    color: #fff;
+    font-size: 16px;
+    font-family: flchill;
+    transition: 0.5s ease;
+}
+nav ul li a:hover {
+    color: #000000;
+    font-size: 16px;
+    font-family: flchill;
+}
+  
+/* Section d'accueil (hero section) */
+#hero-section {
+    text-align: center;
+    padding: 100px 0;
+    background: linear-gradient(to bottom, #20d5db, #33d601);
+}
+  
+#hero-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+  
+#hero-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #777;
+}
+  
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+  
+.btn:hover {
+    background-color: #555;
+}
+  
+/* Sections */
+section {
+    padding: 80px 0;
+}
+  
+section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+  
+section p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: #777;
+}
+  
+/* Formulaire de contact */
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+form button {
+    display: block;
+    padding: 12px 30px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+  
+form button:hover {
+    background-color: #555;
+}
+  
+/* Pied de page */
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#about-section{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#services-section{
+    text-align: center;
+}
+
+.discover{
+    color: white;
+    font-family: flchill;
+}
+
+button{
+    width: 30%;
+    height: 50px;
+    border-radius: 0%;
+    border-color: black;
+    background-color: #7a7a7a;
+    color: white;
+    font-family: netflix;
+    font-size: 1em;
+}
+
+strong{
+    font-family: flchill;
+    color: #fff;
+}
+
+.infos{
+    color: white;
+    font-family: flchill;
+}
+
+.logo-container2 {
+    display: flex;
+    align-items: center;
+}
+  
+.logo2 {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+  
+.old-version{
+    width: 512px;
+}
+
+.center-img{
+    text-align: center;
+}
+
+.btn2 {
+    width: 80%;
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    border: 3px solid #1000be;
+    border-radius: 10px;
+    transition: background-color 0.7s ease;
+    transition: border-radius 0.5s ease, background-color 0.7s ease, font-size 0.7s ease;
+    font-family: flchill;
+    font-size: 1.5em;
+}
+  
+.btn2:hover {
+    border-color: #fff;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #0003be;
+    font-family: flchill;
+    font-size: 2em;
+}
+
+#flcorporation{
+    text-align: center;
+}
+
+.flcorporation{
+    color: #fff;
+    font-family: netflix;
+    background-clip: text;
+    background: linear-gradient(to right, #0013be, #060054);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+::-webkit-scrollbar {
+    background-color: #004c8b;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #0407bd;
+    border-radius: 5px;
+    
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+.alpha-btn{
+    text-align: center;
+    width: 20%;
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: transparent;
+    color: #004cbe;
+    text-decoration: none;
+    border: 3px solid #004cbe;
+    border-radius: 10px;
+    transition: border-radius 0.5s ease, background-color 0.5s ease, font-size 0.5s ease, text-decoration 0.5s ease, width 0.5s ease;
+    font-family: flchill;
+    font-size: 1.5em;
+}
+
+.alpha-btn:hover{
+    text-align: center;
+    width: 25%;
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #004cbe;
+    color: white;
+    text-decoration: underline;
+    border-radius: 20px;
+    font-size: 1.7em;
+}
+
+strong{
+    background: linear-gradient(to right, #8c0be8,#270042);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.strong2{
+    background: linear-gradient(to left, #8c0be8,#270042);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.group-head {
+    background-color: #00be62;
+    padding: 20px;
+}
+
+#group-section {
+    text-align: center;
+    padding: 100px 0;
+    background: linear-gradient(to bottom, #00be62, #00be62, #08e3be, #08e3be, #8c0be8, #000231);
+}
+  
+#group-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+  
+#group-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #777;
+}
+
+.btn3 {
+    width: 40%;
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    border: 3px solid #be0000;
+    border-radius: 10px;
+    transition: background-color 0.7s ease;
+    transition: background-color 0.7s ease, border-color 0.7s ease, color 0.7s ease;
+    font-family: netflix;
+    font-size: 1.5em;
+}
+  
+.btn3:hover {
+    border-color: #fff;
+    color: #be0000;
+    background-color: #fff;
+    font-family: netflix;
+}
+
+#old-theme{
+    text-align: center;
+}
+  
+.chill-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+  
+.chill-btn:hover {
+    background: linear-gradient(to bottom, #DB202C, #0407bd);
+}
+
+.img-fsd{
+    border-radius: 15px;
+    margin: 0 auto;
+    transition: width 0.7s ease, height 0.7s ease;
+}
+
+.img-fsd:hover{
+    width: 180px;
+    height: 260px;
+}
+
+.main1{
+    background: linear-gradient(to bottom, #DB202C, #000231);
+}
+  
+.btn4 {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #181818;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+  
+.btn4:hover {
+    background-color: #333;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: none; /* Masquer par défaut */
+}
+
+.popup button{
+    width: 100px;
+    height: 30px;
+    background-color: #0003be;
+    border: 2px solid #000231;
+}
+
+.news-seasons{
+   color: #fff;
+   font-family: flchill;
+   font-size: 2em; 
+}
+
+@media screen and (max-width : 768px){
+    .btn {
+        display: inline-block;
+        padding: 12px 30px;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+        background-color: #555;
+    }
+    .btn2 {
+        width: 80%;
+        display: inline-block;
+        padding: 12px 30px;
+        background-color: transparent;
+        color: #fff;
+        text-decoration: none;
+        border: 3px solid #1000be;
+        border-radius: 10px;
+        transition: background-color 0.7s ease;
+        transition: border-radius 0.5s ease, background-color 0.7s ease, font-size 0.7s ease;
+        font-family: flchill;
+        font-size: 0.8em;
+    }
+    .btn2:hover {
+        border-color: #fff;
+        border-radius: 50px;
+        color: #fff;
+        background-color: #0003be;
+        font-family: flchill;
+        font-size: 1em;
+    }
+    .btn3 {
+        width: 100%;
+        display: inline-block;
+        padding: 12px 30px;
+        background-color: transparent;
+        color: #fff;
+        text-decoration: none;
+        border: 3px solid #be0000;
+        border-radius: 10px;
+        transition: background-color 0.7s ease;
+        transition: background-color 0.7s ease, border-color 0.7s ease, color 0.7s ease;
+        font-family: netflix;
+        font-size: 1em;
+    }
+      
+    .btn3:hover {
+        border-color: #fff;
+        color: #be0000;
+        background-color: #fff;
+        font-family: netflix;
+    }
+    .logo{
+        width: auto;
+    }
+    nav ul {
+        list-style: none;
+    }
+    nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    nav ul li a {
+        color: #fff;
+        font-size: 0.9em;
+        font-family: netflix;
+        transition: 0.5s ease;
+    }
+    nav ul li a:hover {
+        color: #0407bd;
+        font-size: 16px;
+        font-family: netflix;
+    }
+    .popup {
+        position: fixed;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        background-color: #1e1e1e;
+        color: #fff;
+        padding: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        display: none; /* Masquer par défaut */
+    }
+    .popup button{
+        width: 100px;
+        height: 30px;
+        background-color: #0003be;
+        border: 2px solid #000231;
+    }
+    .news-seasons{
+        color: #fff;
+        font-family: flchill;
+        font-size: 1.5em; 
+    }
+}

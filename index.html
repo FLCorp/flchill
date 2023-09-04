@@ -1,52 +1,81 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="chill1.css">
-        <link rel="stylesheet" href="chill2.css">
-        <link rel="icon" href="img/FLChill_logo.png">
-        <title>FLChill [FLC Flix | Chill Mode]</title>
+      <meta charset="UTF-8">
+      <title>FLChill - FLC Flix | Chill Mode</title>
+      <link rel="stylesheet" href="custom.css">
+      <link rel="stylesheet" href="chill1.css">
+      <link rel="stylesheet" href="chill2.css">
+      <link rel="icon" href="img/FLChill_v3_logo.png">
     </head>
     <body>
-        <div id="player"></div>
-        <div id="sidebar1" class="sidebar">
-            <br>
-            <button id="pause" onclick="pauseVideo()">Pause / Lecture</button>
-            <div>
-              <label for="volume" class="vlm-style">Volume:</label>
-              <input type="range" id="volume" name="volume" min="0" max="100" value="10" onchange="setVolume()" class="vlm-style">
-              <span id="volume-percentage" class="vlm-style">10%</span>
+      <header>
+        <nav>
+          <ul>
+            <li><a href="https://flcorp.github.io/flchill/" target="_blank">FLC Flix</a></li>
+            <li><a href="https://sites.google.com/view/flcorporation/accueil" target="_blank">FLCorporation</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="main1">
+        <section id="hero-section">
+            <div class="logo-container">
+              <img src="img/FLChill_v3.png" alt="Logo" class="logo">
             </div>
-            <br>
-            <button id="toggle-sidebar1" onclick="toggleSidebar(1)">Fermer les options</button>
-            <a href="index.html"><button>Retour à FLC Flix</button></a>
-            <a href="https://forms.gle/Gnov8QPRP65aa1Mr7" target="_blank"><button>Proposer des Musiques</button></a>
-            <br>
-        </div>
-        <h3>Différentes Musiques Chill dispo</h3>
-        <div class="chillbtn">
-            <button id="change-video-1" onclick="changeVideo('GdzrrWA8e7A')">Zelda & Chill - GameChops</button>
-            <button id="change-video-2" onclick="changeVideo('rJlY1uKL87k')">Zelda & Chill II - GameChops</button>
-            <button id="change-video-3" onclick="changeVideo('ZaDnHo3LdmA')">Zelda & Chill III - GameChops</button>
-            <button id="change-video-4" onclick="changeVideo('MTrZXHaXPrU')">Zelda & Sleep - GameChops</button>
-            <button id="change-video-5" onclick="changeVideo('VDBBCLwE1Ww')">Hyrule Lofi - GameChops</button>
-            <button id="change-video-6" onclick="changeVideo('6lzCHxnHlEE')">Lofi of the Kingdom - GameChops</button>
-            <button id="change-video-7" onclick="changeVideo('p9a-AQQJ8Aw')">Mario & Chill - GameChops</button>
-            <button id="change-video-8" onclick="changeVideo('zl1YZSbsYZ8')">Mario & Chill 2 - GameChops</button>
-            <button id="change-video-9" onclick="changeVideo('6uigQxF70HQ')">Nook & Chill - GameChops</button>
-            <button id="change-video-10" onclick="changeVideo('zAF2XJHoUHE')">Chillcraft - GameChops</button>
-            <button id="change-video-11" onclick="changeVideo('b2WKbfHlvGo')">Smash & Chill - GameChops</button>
-            <button id="change-video-12" onclick="changeVideo('CLtlMNC2g6Q')">Samus & Chill - GameChops</button>
-            <button id="reset-video" onclick="resetVideo()">Chilltendo - GameChops</button>
-            <br><br>
-            <button id="change-video-13" onclick="changeVideo('5jaT_8hy3Vg')" class="btn-style2">10 Hours of Lofi Video Games Beats</button>
-            <button id="change-video-14" onclick="changeVideo('OrYACvRQCbQ')" class="btn-style2">Relaxing and Nostalgic Video Game Music</button>
-            <button id="change-video-15" onclick="changeVideo('DJ_wEoW8Qcg')" class="btn-style2">Relaxing Nintendo 64 Video Game Music</button>
-            <br><br>
-            <button id="toggle-sidebar1" onclick="toggleSidebar(1)">Options</button>
-        </div>
-        <script src="https://www.youtube.com/iframe_api"></script>
-        <script src="chill1.js"></script>
-        <script src="chill2.js"></script>
-    </body>
+          <h1>Bienvenue sur le <strong>FLChill</strong></h1>
+          <p>Un site de la <strong>FLCorporation</strong> | <strong class="strong2">FLCorp-web</strong></p>
+          <p>Fonction <strong>Chill Mode</strong> de <strong class="strong2">FLC Flix</strong></p>
+        </section>
+      </main>
+
+      <main>
+        <section id="about-section">
+          <h1><strong>Différentes Musiques Chill Disponible</strong></h1>
+          <br>
+          <div id="player"></div>
+          <button id="change-video-1" onclick="changeVideo('GdzrrWA8e7A')"><img src="img/cover/zelda_and_chill.png" alt=""></button>
+          <button id="change-video-2" onclick="changeVideo('rJlY1uKL87k')"><img src="img/cover/zelda_and_chill_II.png" alt=""></button>
+          <button id="change-video-3" onclick="changeVideo('ZaDnHo3LdmA')"><img src="img/cover/zelda_and_chill_III.png" alt=""></button>
+          <button id="change-video-4" onclick="changeVideo('MTrZXHaXPrU')"><img src="img/cover/zelda_and_sleep.png" alt=""></button>
+          <button id="change-video-5" onclick="changeVideo('VDBBCLwE1Ww')"><img src="img/cover/hyrule_lofi.png" alt=""></button>
+          <button id="change-video-6" onclick="changeVideo('6lzCHxnHlEE')"><img src="img/cover/lofi_of_the_kingdom.png" alt=""></button>
+          <button id="change-video-7" onclick="changeVideo('p9a-AQQJ8Aw')"><img src="img/cover/mario_and_chill.png" alt=""></button>
+          <button id="change-video-8" onclick="changeVideo('zl1YZSbsYZ8')"><img src="img/cover/mario_and_chill_2.png" alt=""></button>
+          <button id="change-video-9" onclick="changeVideo('6uigQxF70HQ')"><img src="img/cover/nook_and_chill.png" alt=""></button>
+          <button id="change-video-10" onclick="changeVideo('zAF2XJHoUHE')"><img src="img/cover/chillcraft.png" alt=""></button>
+          <button id="change-video-11" onclick="changeVideo('b2WKbfHlvGo')"><img src="img/cover/smash_and_chill.png" alt=""></button>
+          <button id="change-video-12" onclick="changeVideo('CLtlMNC2g6Q')"><img src="img/cover/samus_and_chill.png" alt=""></button>
+          <button id="reset-video" onclick="resetVideo()"><img src="img/cover/chilltendo.png" alt=""></button>
+          <br><br>
+          <h1><strong>Autres Musiques</strong></h1>
+          <br>
+          <button id="change-video-01" onclick="changeVideo('5jaT_8hy3Vg')"><img src="img/cover/10_hours_of_lofi_video_game_beats.png" alt=""></button>
+          <button id="change-video-02" onclick="changeVideo('DJ_wEoW8Qcg')"><img src="img/cover/relaxing_nintendo_64_video_game_music.png" alt=""></button>
+          <br>
+          <button id="pause" onclick="pauseVideo()">Pause / Lecture</button>
+          <div>
+            <label for="volume" class="vlm-style">Volume:</label>
+            <input type="range" id="volume" name="volume" min="0" max="100" value="10" onchange="setVolume()" class="vlm-style">
+            <span id="volume-percentage" class="vlm-style">10%</span>
+          </div>
+        </section>
+        
+        <section id="old-theme">
+          <a href="https://flcorp.github.io/flcflix/" target="_blank" class="btn3">Retourner sur FLC Flix v3</a>
+        </section>
+
+        <section id="flcorporation">
+          <h2 class="flcorporation">Se rendre sur le Site de la FLCorporation</h2>
+          <a href="https://sites.google.com/view/flcorporation/accueil" target="_blank" class="btn2">FLCorporation</a>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2023 FLCorporation | &copy; FLCorp-Web<br> Héberger sous le service de Github</p>
+      </footer>
+
+      <script src="https://www.youtube.com/iframe_api"></script>
+      <script src="chill1.js"></script>
+  </body>
 </html>
