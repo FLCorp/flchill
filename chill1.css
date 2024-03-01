@@ -2,34 +2,49 @@
     font-family: netflix;
     src: url(font/BebasNeue-Regular.ttf);
 }
+
 *{
     text-decoration: none;
 }
+
+.vlm-style-fake{
+    visibility: hidden;
+}
+
+.fake-pause{
+    visibility: hidden;
+}
+
 h1{
     color: #20db4c;
     font-family: netflix;
     font-size: 2em;
 }
+
 h3{
     color: #20db4c;
     font-family: netflix;
     font-size: 1em;
 }
+
 h4{
     color: #20db4c;
     font-family: netflix;
     font-size: 0.9em
 }
+
 b{
     color: #20db4c;
     font-family: netflix;
     font-size: 1.5em;
 }
+
 .easteregg{
     color: transparent;
     background-color: transparent;
     border-color: transparent;
 }
+
 .sidebar {
     top: 0;
     width: 300px;
@@ -47,12 +62,14 @@ b{
 .sidebar.open {
     left: 0;
 }
+
 .vlm-style{
-    width: 45%;
+    width: 50%;
     color: rgb(0, 0, 0);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1em;
 }
+
 #audio-container {
     text-align: center;
 }
@@ -62,46 +79,111 @@ audio {
     max-width: 600px;
 }
 
-img{
-    width: 250px;
-    transition: width 0.7s ease;
+.music{
+    font-family: netflix;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 5px;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid #20db4c;
+    border-radius: 20px;
+    transition: all 0.65s ease;
 }
 
-img:hover{
-    width: 280px;
+.music:hover{
+    color: #000000;
+    width: 200px;
+    background-color: #20db4c;
+    border: 2px solid #20db4c;
+    border-radius: 25px;
+}
+
+.big-music{
+    font-family: netflix;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 5px;
+    color: #fff;
+    width: 300px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid #dbc520;
+    border-radius: 10px;
+    transition: all 0.65s ease;
+}
+
+.big-music:hover{
+    color: #000000;
+    width: 300px;
+    background-color: #dbc520;
+    border: 2px solid #dbc520;
+    border-radius: 15px;
+}
+
+.ost-music{
+    font-family: netflix;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 5px;
+    color: #fff;
+    width: 300px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid #a020db;
+    border-radius: 5px 20px 5px 20px;
+    transition: all 0.65s ease;
+}
+
+.ost-music:hover{
+    color: #000000;
+    width: 300px;
+    background-color: #a020db;
+    border: 2px solid #a020db;
+    border-radius: 20px 5px 20px 5px;
 }
 
 button{
-    width: 260px;
-    height: 180px;
-    border-color: transparent;
-    color: transparent;
-    background-color: transparent;
-    transition: width 0.7s ease;
+    font-family: flchill;
     cursor: pointer;
-}
-
-button:hover{
-    width: 280px;
-    height: 180px;
-    border-color: transparent;
-    color: transparent;
-    background-color: transparent;
-}
-
-#pause{
     border-color: #7420db;
     border-radius: 10px;
     color: #7420db;
     height: 30px;
-    width: 150px;
-    transition: border-radius 0.7s ease, color 0.7s ease, width 0.7s ease, background-color 0.7s ease;
+    width: 200px;
+    transition: all 0.7s ease;
 }
 
-#pause:hover{
+button:hover{
     background-color: #7420db;
     border-color: #7420db;
     border-radius: 50px;
     color: #fff;
-    width: 180px;
+    width: 220px;
+}
+
+.single-btn{
+    font-family: flchill;
+    cursor: pointer;
+    border-color: #db2020;
+    background-color: #db2020;
+    border-radius: 10px;
+    color: #db2020;
+    height: 50px;
+    width: 280px;
+    transition: all 0.9s ease;
+}
+
+.single-btn:hover{
+    background-color: #db8d20;
+    border-color: #db8d20;
+    border-radius: 20px;
+    color: #ffffff;
+    width: 300px;
+}
+
+a{
+    color: #000000;
 }

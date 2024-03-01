@@ -6,74 +6,67 @@
       <link rel="stylesheet" href="custom.css">
       <link rel="stylesheet" href="chill1.css">
       <link rel="stylesheet" href="chill2.css">
-      <link rel="icon" href="img/FLChill_v3_logo.png">
+      <link rel="icon" href="img/FLChill_logo.png">
     </head>
     <body>
       <header>
-        <nav>
-          <ul>
-            <li><a href="https://flcorp.github.io/flchill/" target="_blank">FLC Flix</a></li>
-            <li><a href="https://sites.google.com/view/flcorporation/accueil" target="_blank">FLCorporation</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <main class="main1">
-        <section id="hero-section">
-            <div class="logo-container">
-              <img src="img/FLChill_v3.png" alt="Logo" class="logo">
-            </div>
-          <h1>Bienvenue sur le <strong>FLChill</strong></h1>
-          <p>Un site de la <strong>FLCorporation</strong> | <strong class="strong2">FLCorp-web</strong></p>
-          <p>Fonction <strong>Chill Mode</strong> de <strong class="strong2">FLC Flix</strong></p>
-        </section>
-      </main>
-
-      <main>
-        <section id="about-section">
-          <h1><strong>Différentes Musiques Chill Disponible</strong></h1>
-          <br>
-          <div id="player"></div>
-          <button id="reset-video" onclick="resetVideo()"><img src="img/cover/chilltendo.png" alt=""></button>
-          <button id="change-video-1" onclick="changeVideo('GdzrrWA8e7A')"><img src="img/cover/zelda_and_chill.png" alt=""></button>
-          <button id="change-video-2" onclick="changeVideo('rJlY1uKL87k')"><img src="img/cover/zelda_and_chill_II.png" alt=""></button>
-          <button id="change-video-3" onclick="changeVideo('ZaDnHo3LdmA')"><img src="img/cover/zelda_and_chill_III.png" alt=""></button>
-          <button id="change-video-13" onclick="changeVideo('vb_KmW0QPww')"><img src="img/cover/zelda_and_piano.png" alt=""></button>
-          <button id="change-video-4" onclick="changeVideo('MTrZXHaXPrU')"><img src="img/cover/zelda_and_sleep.png" alt=""></button>
-          <button id="change-video-5" onclick="changeVideo('VDBBCLwE1Ww')"><img src="img/cover/hyrule_lofi.png" alt=""></button>
-          <button id="change-video-6" onclick="changeVideo('6lzCHxnHlEE')"><img src="img/cover/lofi_of_the_kingdom.png" alt=""></button>
-          <button id="change-video-7" onclick="changeVideo('p9a-AQQJ8Aw')"><img src="img/cover/mario_and_chill.png" alt=""></button>
-          <button id="change-video-8" onclick="changeVideo('zl1YZSbsYZ8')"><img src="img/cover/mario_and_chill_2.png" alt=""></button>
-          <button id="change-video-9" onclick="changeVideo('6uigQxF70HQ')"><img src="img/cover/nook_and_chill.png" alt=""></button>
-          <button id="change-video-10" onclick="changeVideo('zAF2XJHoUHE')"><img src="img/cover/chillcraft.png" alt=""></button>
-          <button id="change-video-11" onclick="changeVideo('b2WKbfHlvGo')"><img src="img/cover/smash_and_chill.png" alt=""></button>
-          <button id="change-video-12" onclick="changeVideo('CLtlMNC2g6Q')"><img src="img/cover/samus_and_chill.png" alt=""></button>
-          <button id="change-video-14" onclick="changeVideo('2DVpys50LVE')"><img src="img/cover/poké_and_chill.png" alt=""></button>
-          <button id="change-video-15" onclick="changeVideo('j7CPAIReOKA')"><img src="img/cover/poké_tape.png" alt=""></button>
-          <br><br>
-          <h1><strong>Autres Musiques</strong></h1>
-          <br>
-          <button id="change-video-01" onclick="changeVideo('5jaT_8hy3Vg')"><img src="img/cover/10_hours_of_lofi_video_game_beats.png" alt=""></button>
-          <button id="change-video-02" onclick="changeVideo('DJ_wEoW8Qcg')"><img src="img/cover/relaxing_nintendo_64_video_game_music.png" alt=""></button>
-          <br><br>
-          <h1><strong>OST [Original Sound Tracks]</strong></h1>
-          <br>
-          <button id="change-video-001" onclick="changeVideo('sIiEi96USlo')"><img src="img/cover/oot_ost_cover.png" alt=""></button>
-          <button id="change-video-002" onclick="changeVideo('riCyyVPkGeI')"><img src="img/cover/mm_ost_cover.png" alt=""></button>
-          <button id="change-video-003" onclick="changeVideo('3JtDLDmvSZY')"><img src="img/cover/botw_ost_cover.png" alt=""></button>
-          <button id="change-video-004" onclick="changeVideo('7O4SbCuNuvQ')"><img src="img/cover/minecraft_ost_cover.png" alt=""></button>
-          <button id="change-video-005" onclick="changeVideo('X_wOnG67mKE')"><img src="img/cover/splatoon_ost_cover.png" alt=""></button>
-          <button id="change-video-006" onclick="changeVideo('dYj5_R_HZ6M')"><img src="img/cover/splatoon2_ost_cover.png" alt=""></button>
-          <button id="change-video-007" onclick="changeVideo('gTfVdYc39vA')"><img src="img/cover/mariobroswii_ost_cover.png" alt=""></button>
-          <button id="change-video-008" onclick="changeVideo('kiMO9lNsuc4')"><img src="img/cover/mariokartwii_ost_cover.png" alt=""></button>
-          <button id="change-video-009" onclick="changeVideo('lSwjoHBSU5c')"><img src="img/cover/mariobroswonder_ost_cover.png" alt=""></button>
-          <br>
           <button id="pause" onclick="pauseVideo()">Pause / Lecture</button>
           <div>
             <label for="volume" class="vlm-style">Volume:</label>
             <input type="range" id="volume" name="volume" min="0" max="100" value="10" onchange="setVolume()" class="vlm-style">
             <span id="volume-percentage" class="vlm-style">10%</span>
           </div>
+      </header>
+      <div class="fake-header">
+        <button id="fake-pause" onclick="pauseVideo()">Pause / Lecture</button>
+        <div>
+          <label for="volume" class="vlm-style">Volume:</label>
+          <input type="range" id="volume" name="volume" min="0" max="100" value="10" onchange="setVolume()" class="vlm-style-fake">
+          <span id="volume-percentage" class="vlm-style-fake">10%</span>
+        </div>
+      </div>
+
+      <main class="main1">
+        <section id="hero-section">
+            <div class="logo-container">
+              <img src="img/FLChill_logo_v4_page.png" alt="Logo" class="logo">
+            </div>
+          <h1>Bienvenue sur <strong class="strong3">FLChill</strong></h1>
+        </section>
+      </main>
+
+      <main>
+        <section id="about-section">
+          <h1><strong>DiFferEntes Musiques Chill Disponible</strong></h1>
+          <div id="player"></div>
+          <button id="reset-video" onclick="resetVideo()" class="music">Chilltendo - GameChops</button>
+          <button id="change-video-1" onclick="changeVideo('GdzrrWA8e7A')" class="music">Zelda & Chill - GameChops</button>
+          <button id="change-video-2" onclick="changeVideo('rJlY1uKL87k')" class="music">Zelda & Chill II - GameChops</button>
+          <button id="change-video-3" onclick="changeVideo('ZaDnHo3LdmA')" class="music">Zelda & Chill III - GameChops</button>
+          <button id="change-video-4" onclick="changeVideo('MTrZXHaXPrU')" class="music">Zelda & Sleep - GameChops</button>
+          <button id="change-video-5" onclick="changeVideo('vb_KmW0QPww')" class="music">Zelda & Piano - GameChops</button>
+          <button id="change-video-6" onclick="changeVideo('VDBBCLwE1Ww')" class="music">Hyrule Lofi - GameChops</button>
+          <button id="change-video-7" onclick="changeVideo('6lzCHxnHlEE')" class="music">Lofi of the Kingdom - GameChops</button>
+          <button id="change-video-8" onclick="changeVideo('p9a-AQQJ8Aw')" class="music">Mario & Chill - GameChops</button>
+          <button id="change-video-9" onclick="changeVideo('zl1YZSbsYZ8')" class="music">Mario & Chill 2 - GameChops</button>
+          <button id="change-video-10" onclick="changeVideo('6uigQxF70HQ')" class="music">Nook & Chill - GameChops</button>
+          <button id="change-video-11" onclick="changeVideo('zAF2XJHoUHE')" class="music">Chillcraft - GameChops</button>
+          <button id="change-video-12" onclick="changeVideo('b2WKbfHlvGo')" class="music">Smash & Chill - GameChops</button>
+          <button id="change-video-13" onclick="changeVideo('CLtlMNC2g6Q')" class="music">Samus & Chill - GameChops</button>
+          <button id="change-video-14" onclick="changeVideo('2DVpys50LVE')" class="music">Poké and Chill - GameChops</button>
+          <button id="change-video-15" onclick="changeVideo('j7CPAIReOKA')" class="music">Poké Tape - GameChops</button>
+          <br><br>
+          <h1><strong>Autres Musiques</strong></h1>
+          <button id="change-video-01" onclick="changeVideo('5jaT_8hy3Vg')" class="big-music">10 Hours of Lofi Video Game Beats</button>
+          <button id="change-video-02" onclick="changeVideo('DJ_wEoW8Qcg')" class="big-music">Relaxing Nintendo 64 Video Game Music</button>
+          <br><br>
+          <h1><strong>OST [Original SoundTracks]</strong></h1>
+          <button id="change-video-001" onclick="changeVideo('sIiEi96USlo')" class="ost-music">The Legend of Zelda : Ocarina of Time</button>
+          <button id="change-video-002" onclick="changeVideo('riCyyVPkGeI')" class="ost-music">The Legend of Zelda : Majora's Mask</button>
+          <button id="change-video-003" onclick="changeVideo('3JtDLDmvSZY')" class="ost-music">The Legend of Zelda : Breath of the Wild</button>
+          <button id="change-video-004" onclick="changeVideo('7O4SbCuNuvQ')" class="ost-music">Minecraft</button>
+          <button id="change-video-005" onclick="changeVideo('X_wOnG67mKE')" class="ost-music">Splatoon</button>
+          <button id="change-video-006" onclick="changeVideo('gTfVdYc39vA')" class="ost-music">New Super Mario Bros. WII</button>
         </section>
         
         <section id="old-theme">
